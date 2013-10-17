@@ -1,30 +1,10 @@
-<!--
 <?php 
-include 'login.php'
-?> 
--->
-<!-- MySQL Connect für Anlass-Anzeige -->
-<?php 
-include("mysql.php");
+ 
+$layout_title='Event Erfassen';
 
-  
-?>
+function layout_navigation() echo {"<?php include("navigation.php"); ?>"};
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>GM Intra :: Event Erfassen</title>
-<link rel="stylesheet" type="text/css" media="all" href="style.css">
-</head>
-<body>
-	<div class="m_title" align="center">
-		<span class="m_title">GM Intra :: Event Erfassen</span>
-	</div>
-	<div class="m_bar" align ="center">
-		<?php include("navigation.php") ?>
-	</div>
-	<div class="m_content">
+function layout_content() echo {"
 		<div id="form" align="center">
 			<form action="xxx" method="POST">
 				<table border="0" width="250" cellpadding="0" cellspacing="0">
@@ -62,7 +42,8 @@ include("mysql.php");
 			 	<input name="submit" type="submit" value="Login">
 			</form>		
 		</div>	
-		
-	</div>
-</body>
-</html>
+"};
+
+require ("layout.php");
+
+?>
