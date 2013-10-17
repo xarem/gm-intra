@@ -6,9 +6,12 @@ $ergebnis = mysql_query($abfrage);
 
 $layout_title='Kalender';
 
-function layout_navigation() echo {"<?php include("navigation.php"); ?>"};
+function layout_navigation() { 
+	echo "<?php include("navigation.php"); ?>";
+};
 
-function layout_content() echo {"						
+function layout_content() { 
+	echo "						
 	<?php while('.$row.' = mysql_fetch_array('.$ergebnis.')){
     	setlocale (LC_ALL, 'de_DE.UTF-8');
         '.$oldSD.' = '.$row.'["startdate"];
@@ -23,8 +26,8 @@ function layout_content() echo {"
         echo '<tr><td colspan=\'4\'><a href=\'' . $row[\'link\'] . '\'>abmelden</a></td></tr></table>';
         echo '<br />';
         }
-	?>
-"};
+	?>";
+};
 
 require ("layout.php");
 
