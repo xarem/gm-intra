@@ -14,6 +14,14 @@ p {
 	margin:0px;
 	padding:0px;
 }
+h3 {
+	margin:0px;
+	font-size:13pt;
+}
+h4 {
+	margin:0px;
+	font-size:12pt;
+}
 
 /* Login-Page */
 
@@ -22,8 +30,8 @@ div#log_title {
 	font-size:20pt;
 	margin-top:40px;
 }
-div#log_form {
-	margin-top:80px;
+div#form {
+	
 }
 div.m_title {
 	font-weight:bold;
@@ -51,7 +59,4 @@ div.m_content {
 	border:1px solid;
 	margin:20px auto;
 	padding:20px;
-}
-h3.m_content {
-	margin-top:0px;
 }
